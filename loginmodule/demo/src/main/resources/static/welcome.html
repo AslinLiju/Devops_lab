@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Welcome</title></head>
+<body>
+    <h2>Welcome, <span id="userSpan"></span>!</h2>
+    <a href="/login">Logout</a>
+    <script>
+        const user = localStorage.getItem("user");
+        if (!user) {
+            window.location.href = "/login";
+        } else {
+            document.getElementById("userSpan").innerText = user;
+        }
+    </script>
+</body>
+</html>
