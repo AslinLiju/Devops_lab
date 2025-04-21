@@ -6,8 +6,8 @@
 trigger:
 - main
 
-pool:
-  name: sem_lab
+pool: 
+  name: lab_4019
 
 steps:
 - task: Maven@3
