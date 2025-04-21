@@ -1,12 +1,3 @@
-function registerUser(event){
-    event.preventDefault();
-    const user = document.getElementById("regUser").value;
-    const pass = document.getElementById("regPass").value;
-    localStorage.setItem(user, pass);
-    alert("Registration successful!");
-    window.location.href = "/login";
-    return false;
-}
 document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.getElementById("loginForm");
     if (loginForm) {
